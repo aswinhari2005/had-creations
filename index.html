@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H.A.D CREATIONS | Interior Design Studio</title>
+    <meta
+      name="description"
+      content="H.A.D CREATIONS crafts elegant interior design experiences with soft, elevated styling and thoughtful functionality."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="H.A.D CREATIONS home">
+          <img src="/public/assets/logo.png" alt="H.A.D CREATIONS logo" class="brand__logo" />
+          <div class="brand__text">
+            <span>H.A.D CREATIONS</span>
+            <small>From concept to comfort</small>
+          </div>
+        </a>
+
+        <nav class="site-nav">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="nav-cta">Start a Project</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero">
+          <div class="hero__content">
+            <p class="eyebrow" id="hero-eyebrow">Interior Design Studio</p>
+            <h1 id="hero-title">
+              Timeless interior spaces shaped with warmth, elegance, and purpose.
+            </h1>
+            <p class="hero__description" id="hero-description">
+              H.A.D CREATIONS creates refined residential and boutique commercial interiors with a soft contemporary aesthetic, practical planning, and thoughtful detailing.
+            </p>
+            <div class="hero__actions">
+              <a href="#contact" class="button button--primary">Book a Consultation</a>
+              <a href="#services" class="button button--secondary">Explore Services</a>
+            </div>
+          </div>
+
+          <div class="hero__card">
+            <div class="showcase-card">
+              <span class="showcase-card__label">Signature aesthetic</span>
+              <h2>Soft luxury with livable comfort</h2>
+              <p>
+                Clean silhouettes, natural light, calming palettes, and custom details come together to create homes that feel composed and deeply personal.
+              </p>
+              <div class="stat-grid" id="stat-grid"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="services">
+          <div class="section-heading">
+            <p class="eyebrow">What we do</p>
+            <h2>End-to-end interior design services that guide every stage of your journey.</h2>
+          </div>
+          <div class="service-grid" id="service-grid"></div>
+        </section>
+
+        <section class="section section--accent" id="process">
+          <div class="section-heading">
+            <p class="eyebrow">Our process</p>
+            <h2>A clear, collaborative journey from first idea to final comfort.</h2>
+          </div>
+          <div class="process-list" id="process-list"></div>
+        </section>
+
+        <section class="section about" id="about">
+          <div class="about__content">
+            <p class="eyebrow">About the studio</p>
+            <h2 id="about-title">Designed to feel beautiful today and effortless every day after.</h2>
+            <p id="about-paragraph-1"></p>
+            <p id="about-paragraph-2"></p>
+          </div>
+          <div class="about__panel">
+            <img src="/public/assets/logo.png" alt="H.A.D CREATIONS line-art logo" />
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+          <div class="contact-card">
+            <div class="contact-card__intro">
+              <p class="eyebrow">Let’s create your space</p>
+              <h2>Share your project and we’ll help shape the next step.</h2>
+              <p>
+                Share your project details and H.A.D CREATIONS will get back to you with the right next steps.
+              </p>
+              <ul class="contact-details" id="contact-details"></ul>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+              <label>
+                Full name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@example.com" required />
+              </label>
+              <label>
+                Phone
+                <input type="tel" name="phone" placeholder="+91" />
+              </label>
+              <label>
+                Project type
+                <select name="projectType">
+                  <option value="Residential">Residential</option>
+                  <option value="Commercial">Commercial</option>
+                  <option value="Renovation">Renovation</option>
+                  <option value="Consultation">Consultation</option>
+                </select>
+              </label>
+              <label>
+                Project city
+                <input type="text" name="city" placeholder="Thrissur, Kerala" />
+              </label>
+              <label>
+                Budget range
+                <select name="budgetRange">
+                  <option value="">Select your range</option>
+                  <option value="Below 5 Lakhs">Below 5 Lakhs</option>
+                  <option value="5 to 10 Lakhs">5 to 10 Lakhs</option>
+                  <option value="10 to 20 Lakhs">10 to 20 Lakhs</option>
+                  <option value="20 Lakhs and above">20 Lakhs and above</option>
+                </select>
+              </label>
+              <label>
+                Tell us about your project
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Scope, style, timeline, or anything important"
+                  required
+                ></textarea>
+              </label>
+              <button type="submit" class="button button--primary button--full">
+                Send Enquiry
+              </button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/public/app.js" defer></script>
+  </body>
+</html>
