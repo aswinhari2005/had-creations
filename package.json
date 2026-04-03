@@ -1,0 +1,9 @@
+{
+  "name": "had-creations-website",
+  "version": "1.0.0",
+  "description": "Professional full-stack website for H.A.D CREATIONS",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.101.1",
+    "xlsx": "^0.18.5"
+  }
+}
